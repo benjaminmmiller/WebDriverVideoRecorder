@@ -8,7 +8,8 @@ import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
-import Utils.MiscUtils;
+import test.testScript;
+import utils.MiscUtils;
 import videoRecorder.VideoManager;
 
 public class testNGVideoRecorder {
@@ -22,12 +23,9 @@ public class testNGVideoRecorder {
 		wd.manage().window().setSize(new Dimension(1920,1080));
 		video.addWebDriver(wd);
 		video.startRecordering();
-		try {
-			testVideoRecorder.goThroughAllPages(wd);
-		} catch (InterruptedException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
+		
+		testScript.goThroughAllPages(wd);
+
 		MiscUtils.delay(600000L);
 		video.stopRecordering();
 		video.packageVideo();

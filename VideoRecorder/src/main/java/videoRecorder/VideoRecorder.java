@@ -27,12 +27,12 @@ import org.bytedeco.javacv.FFmpegFrameRecorder;
 import org.bytedeco.javacv.OpenCVFrameConverter;
 import org.openqa.selenium.WebDriver;
 
-import fileUtils.TestingFrameworkFileUtils;
 import screenshotTaker.Base64Screenshot;
 import screenshotTaker.BytesScreenshot;
 import screenshotTaker.FileScreenshot;
 import screenshotTaker.RobotScreenshot;
 import screenshotTaker.Screenshot;
+import utils.TestingFrameworkFileUtils;
 
 /**
  * A individual video recorder that can be applied on a WebDriver instance.

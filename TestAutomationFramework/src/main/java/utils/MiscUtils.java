@@ -1,4 +1,5 @@
-package Utils;
+package utils;
+
 
 public class MiscUtils {
 	

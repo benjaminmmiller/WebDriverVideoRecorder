@@ -12,7 +12,7 @@ import org.testng.ITestContext;
 import org.testng.ITestListener;
 import org.testng.ITestResult;
 
-import fileUtils.TestingFrameworkFileUtils;
+import utils.TestingFrameworkFileUtils;
 import webDriverRegistry.WebdriverRegistry;
 
 public class TestListener implements ITestListener{

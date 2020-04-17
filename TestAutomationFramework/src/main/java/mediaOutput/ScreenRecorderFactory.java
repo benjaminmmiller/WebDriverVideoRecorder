@@ -14,10 +14,7 @@ import static org.monte.media.VideoFormatKeys.*;
 import org.monte.media.math.Rational;
 
 public class ScreenRecorderFactory {
-
-	
 	public static ScreenRecorder createNewScreenRecorder(int displayIndex){
-		
 		GraphicsConfiguration gc = GraphicsEnvironment
 				.getLocalGraphicsEnvironment()
 				.getScreenDevices()[displayIndex]
