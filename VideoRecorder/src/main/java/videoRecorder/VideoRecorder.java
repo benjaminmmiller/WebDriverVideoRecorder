@@ -127,7 +127,7 @@ public class VideoRecorder {
 		this.schedule = Executors.newScheduledThreadPool(100);
 		this.videoRecordingDirectory = TestingFrameworkFileUtils.getProjectFilePath()+"\\test-output\\recordings";
 		this.tempImageDirectory = videoRecordingDirectory+"\\images"+this.videoID;
-		this.outputVideoDirectory = videoRecordingDirectory+"\\videos";
+		this.outputVideoDirectory = videoRecordingDirectory+"\\video"+" "+this.videoID;
 		// Setup all the necessary file directories.
 		setupDirectories();
 		// Initialize the screenshotScheduler based on the RecordType set.
