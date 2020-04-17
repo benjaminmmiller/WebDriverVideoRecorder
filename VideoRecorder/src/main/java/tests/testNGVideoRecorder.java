@@ -15,7 +15,6 @@ import videoRecorder.VideoManager;
 public class testNGVideoRecorder {
 
 	
-	
 	@Test
 	public void testNGTest1() {
 		VideoManager video = new VideoManager();
@@ -23,21 +22,20 @@ public class testNGVideoRecorder {
 		wd.manage().window().setSize(new Dimension(1920,1080));
 		video.addWebDriver(wd);
 		video.startRecordering();
-		
 		testScript.goThroughAllPages(wd);
-
-		MiscUtils.delay(600000L);
 		video.stopRecordering();
 		video.packageVideo();
 	}
 	
-	
-	
-	
-	/*@Test
+	@Test
 	public void testNGTest2() {
+		VideoManager video = new VideoManager();
 		WebDriver wd = new FirefoxDriver();
 		wd.manage().window().setSize(new Dimension(1920,1080));
-		System.out.println(video);
-	}*/
+		video.addWebDriver(wd);
+		video.startRecordering();
+		testScript.goThroughAllPages(wd);
+		video.stopRecordering();
+		video.packageVideo();
+	}
 }
