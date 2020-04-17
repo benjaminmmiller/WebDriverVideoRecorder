@@ -37,6 +37,7 @@ import screenshotTaker.Screenshot;
 /**
  * A individual video recorder that can be applied on a WebDriver instance.
  * Used for scheduling screenshot tasks and packing them into a video.
+ * Default output location is (from project root) test-output\recordings\VideoName.mp4
  */
 public class VideoRecorder {
 	private WebDriver wd;
