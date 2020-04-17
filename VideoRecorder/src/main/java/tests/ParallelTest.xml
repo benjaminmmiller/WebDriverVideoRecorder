@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<suite name="Test-method Suite" parallel="methods" thread-count="5" >
+  <test name="Test-class test">
+    <classes>
+    	<class name="tests.testNGVideoRecorder" />
+    </classes>
+  </test>
+</suite>
