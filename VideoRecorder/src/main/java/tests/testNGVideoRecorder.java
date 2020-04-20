@@ -16,7 +16,7 @@ import videoRecorder.VideoManager;
 /**
  * Test used for evaluating parallel testing. 
  * Contains two tests which run the same duplicate code. 
- * Called in ParallelTetst.xml. Test
+ * Called in ParallelTetst.xml.
  */
 public class testNGVideoRecorder {
 	@Test
