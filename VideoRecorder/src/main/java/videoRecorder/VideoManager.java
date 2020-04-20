@@ -96,7 +96,7 @@ public class VideoManager {
 	}
 	
 	/**
-	 * 
+	 * Writes the temporary image files to disk and packages them into a video.
 	 */
 	public void packageVideo() {
 		if(this.hasRecordedVideo) {
