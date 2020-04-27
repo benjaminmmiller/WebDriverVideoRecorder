@@ -1,6 +1,7 @@
 package utils;
 
 import java.io.File;
+import java.io.FileWriter;
 import java.io.IOException;
 import java.util.Collections;
 import java.util.Comparator;
@@ -82,5 +83,26 @@ public class TestingFrameworkFileUtils {
 		    }
 		});
 		return files;
+	}
+	
+	public static File createAndWriteToTextFile(String fileDir, String fileName, String fileText) {
+		File newFile = new File(fileDir+"\\"+fileName+".txt");
+		try {
+			if(newFile.exists()) {
+				File oldFile = newFile;
+				oldFile.delete();
+				newFile.createNewFile();
+			}
+			else {
+				newFile.createNewFile();
+			}
+			FileWriter fileWriter = new FileWriter(newFile);
+			fileWriter.write(fileText);
+			fileWriter.close();
+		}
+		catch(IOException e) {
+			e.printStackTrace();
+		}
+		return newFile;
 	}
 }
