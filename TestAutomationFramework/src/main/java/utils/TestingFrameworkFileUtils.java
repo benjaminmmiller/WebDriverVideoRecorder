@@ -99,6 +99,7 @@ public class TestingFrameworkFileUtils {
 			FileWriter fileWriter = new FileWriter(newFile);
 			fileWriter.write(fileText);
 			fileWriter.close();
+			System.out.println("File has been created and written to: "+newFile.getAbsolutePath());
 		}
 		catch(IOException e) {
 			e.printStackTrace();
